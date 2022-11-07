@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="{{ url_for('static',filename='styles/style.css') }}" type="text/css" rel="stylesheet" />
+		<title>Tarea Capa de Aplicación</title>
+	</head>
+	<body>
+		<h1>Tarea Capa de Aplicación</h1>
+		<h2>
+			Josué Huertas Mora <br />
+			2019160629
+		</h2>
+		<h2>
+			Thifany González Vargas <br />
+			2018088910
+		</h2>
+		<h3>
+			Da click al botón para iniciar publicar los datos del clima de <br />
+			Alajuela cada 10 minutos como un tweet en la cuenta @heyitsthiff
+		</h3>
+
+		<form action="/get_weather" method="GET">
+			<button class="button" type="submit"> 
+				<h4>Iniciar a publicar tweets</h4>
+			</button>
+		</form>
+	</body>
+</html>
